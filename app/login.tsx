@@ -19,7 +19,7 @@ export default function Login() {
       setLoading(true);
 
       const response = await fetch(
-        "https://clipshift-production.up.railway.app/api/auth/login",
+        "https://clipshift-production.up.railway.app/auth/login",
         {
           method: "POST",
           headers: {
