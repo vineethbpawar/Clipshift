@@ -55,6 +55,10 @@ async function startServer() {
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
 
   registerOAuthRoutes(app);
+  
+  app.get("/", (_req, res) => {
+  res.send("ClipShift API is running ✅");
+});
 
   app.get("/api/health", (_req, res) => {
     res.json({ ok: true, timestamp: Date.now() });
