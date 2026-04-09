@@ -55,13 +55,13 @@ export default function HomeScreen() {
             <View className="w-full gap-3">
               <TouchableOpacity
                 className="bg-primary rounded-lg py-4 px-6 items-center"
-                onPress={() => router.push("/(tabs)")}
+                onPress={() => router.push("/login")}
               >
                 <Text className="text-background font-semibold text-lg">Sign In</Text>
               </TouchableOpacity>
               <TouchableOpacity
                 className="border-2 border-primary rounded-lg py-4 px-6 items-center"
-                onPress={() => router.push("/(tabs)")}
+                onPress={() => router.push("/signup")}
               >
                 <Text className="text-primary font-semibold text-lg">Create Account</Text>
               </TouchableOpacity>
